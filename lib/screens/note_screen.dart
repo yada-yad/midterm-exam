@@ -1,22 +1,22 @@
-//! This is file is meant for the second screen, i.e., NoteScreen.
-//! Parts of the code have been given. Complete the remaining.
-//? You can refactor the code if needed
+// //! This is file is meant for the second screen, i.e., NoteScreen.
+// //! Parts of the code have been given. Complete the remaining.
+// //? You can refactor the code if needed
 
 import 'package:flutter/material.dart';
-// import '../models/note.dart';
+import '../models/note.dart';
 
-class  NoteScreen extends StatefulWidget {
-  @override
-  _NoteScreenState createState() => _NoteScreenState();
-}
-class _NoteScreenState extends State<NoteScreen> {
-  @override
+class NoteScreen extends StatelessWidget {
+  Note currentNote;
+  String chosen;
+  NoteScreen({this.currentNote, this.chosen});
+  //NoteScreen.copy(this.currentNote, this.chosen, {String chosen});
+
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         leading: Container(),
         centerTitle: true,
-        title: Text('Note Screen App Bar Title'),
+        title: Text(chosen.toString()),
         actions: [
           IconButton(
               icon: Icon(
@@ -37,8 +37,8 @@ class _NoteScreenState extends State<NoteScreen> {
         child: Column(
           children: [
             TextFormField(
-              initialValue: null,
-              enabled: true,
+              initialValue: currentNote.title,
+              enabled: false,
               decoration: InputDecoration(
                 hintText: 'Type the title here',
               ),

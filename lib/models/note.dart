@@ -5,6 +5,4 @@ class Note {
   String content;
 
   Note(this.title, this.content);
-
-  Note.copy(Note obj) : this((obj.title), (obj.content));
 }

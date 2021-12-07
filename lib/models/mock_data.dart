@@ -4,18 +4,20 @@ import 'note.dart';
 
 final noteList = <Note>[
   noteList(
-  Note("What is Flutter",
-      "Flutter is an open-source UI framework for creating native mobile applications. It allows developers to build mobile applications a single codebase"),),
-  noteList(
-  Note("Stateful Widgets",
-      "The widgets whose state can be altered once they are built are called stateful Widgets. "),
-  noteList(
-  Note("Conditional (ternary) operator ",
-      "The conditional (ternary) operator in Dart takes three operands: a condition, first expression (if truthy) and second expression (if falsy)."),),
-  noteList(
-  Note("Conditional (ternary) operator ",
-"The conditional (ternary) operator in Dart takes three operands: a condition, first expression (if truthy) and second expression (if falsy)."),
+    Note("What is Flutter",
+        "Flutter is an open-source UI framework for creating native mobile applications. It allows developers to build mobile applications a single codebase"),
   ),
+  noteList(
+    Note("Stateful Widgets",
+        "The widgets whose state can be altered once they are built are called stateful Widgets. "),
+    noteList(
+      Note("Conditional (ternary) operator ",
+          "The conditional (ternary) operator in Dart takes three operands: a condition, first expression (if truthy) and second expression (if falsy)."),
+    ),
+    noteList(
+      Note("Conditional (ternary) operator ",
+          "The conditional (ternary) operator in Dart takes three operands: a condition, first expression (if truthy) and second expression (if falsy)."),
+    ),
   ),
 ];
 

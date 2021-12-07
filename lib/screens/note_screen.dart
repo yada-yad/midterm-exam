@@ -3,10 +3,14 @@
 //? You can refactor the code if needed
 
 import 'package:flutter/material.dart';
-
 // import '../models/note.dart';
 
-class NoteScreen extends StatelessWidget {
+class  NoteScreen extends StatefulWidget {
+  @override
+  _NoteScreenState createState() => _NoteScreenState();
+}
+class _NoteScreenState extends State<NoteScreen> {
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-
+// import '../models/note.dart';
+import 'screens/note_screen.dart';
 import 'screens/list_screen.dart';
 
 void main() {
@@ -12,4 +13,3 @@ void main() {
     home: ListScreen(),
   ));
 }
-
